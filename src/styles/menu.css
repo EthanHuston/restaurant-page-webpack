@@ -1,0 +1,23 @@
+.menu-title {
+  text-align: center;
+  margin: 50px;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.item-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  border: 1px solid gray;
+  padding: 5px;
+}
+.item-image {
+  width: 250px;
+  height: auto;
+  grid-row: 1 / 3;
+}

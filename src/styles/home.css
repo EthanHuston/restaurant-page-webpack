@@ -1,3 +1,12 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 48px;
+}
+
 .home-image {
   width: 500px;
   height: auto;

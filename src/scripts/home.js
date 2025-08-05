@@ -21,6 +21,7 @@ function renderHome() {
   const chickenImage = createHTML("img", null, ["home-image"]);
 
   chickenImage.src = friedChickHome;
+  chickenImage.alt = "Fried Chicken";
   const attribution = createHTML("p", null, ["attribution"], "Photo by: ");
   const link = createHTML("a", null, ["link"], "Lucas Andrade");
   link.href =

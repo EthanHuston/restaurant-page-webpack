@@ -1,6 +1,12 @@
 import { renderHome } from "./home";
+import { renderMenu } from "./menu";
+import { renderContact } from "./contact";
 
 const contentDiv = document.querySelector("#content");
+const homeButton = document.querySelector(".home");
+const menuButton = document.querySelector(".menu");
+const contactButton = document.querySelector(".contact");
+
 function loadSite() {
   renderHomePage();
 }
@@ -9,8 +15,14 @@ function renderHomePage() {
   contentDiv.innerHTML = "";
   renderHome();
 }
-function renderMenuPage() {}
-function renderContactPage() {}
+function renderMenuPage() {
+  contentDiv.innerHTML = "";
+  renderMenu();
+}
+function renderContactPage() {
+  contentDiv.innerHTML = "";
+  renderContact();
+}
 
 //Funtion to standardize the creation of HTML elements in the DOM
 // Inspired by and taken from Ginner Zapata on Github @ginnerzapata
@@ -24,5 +36,9 @@ function createHTML(type, id, classesArr, content) {
 
   return element;
 }
+
+homeButton.addEventListener("click", renderHomePage);
+menuButton.addEventListener("click", renderMenuPage);
+contactButton.addEventListener("click", renderContactPage);
 
 export { loadSite, createHTML };

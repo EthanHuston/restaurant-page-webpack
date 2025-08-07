@@ -20,6 +20,8 @@ function renderMenu() {
     ["item-desc"],
     "Spicy chicken bites served with barbeque sauce."
   );
+
+  //Creating Images
   const itemOneImg = createHTML("img", null, ["item-image"], null);
   itemOneImg.src = itemOneImage;
   itemOneImg.alt = "Chicken bites with barbeque sauce";
@@ -68,6 +70,8 @@ function renderMenu() {
   const itemFourImg = createHTML("img", null, ["item-image"], null);
   itemFourImg.src = itemFourImage;
   itemFourImg.alt = "Chicken Salad";
+
+  //Adding to DOM
   itemFour.appendChild(itemFourImg);
   itemFour.appendChild(itemFourName);
   itemFour.appendChild(itemFourDesc);

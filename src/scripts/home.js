@@ -27,6 +27,7 @@ function renderHome() {
   link.href =
     "https://unsplash.com/@lucaslafotografia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash";
 
+  //Adding to DOM
   container.appendChild(welcomeH2);
   container.appendChild(infoPara);
   container.appendChild(chickenImage);
